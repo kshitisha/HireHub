@@ -5,18 +5,10 @@ dotenv.config({});
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: process.env.MAIL_USER,   // your Gmail address
-        pass: process.env.MAIL_PASS    // Gmail App Password (not your login password)
+        user: process.env.MAIL_USER,   
+        pass: process.env.MAIL_PASS    
     }
 });
-
-/**
- * Send application confirmation email to the job seeker.
- * @param {string} toEmail - Applicant's email address
- * @param {string} applicantName - Applicant's full name
- * @param {string} jobTitle - Title of the job they applied to
- * @param {string} companyName - Company name
- */
 export const sendApplicationConfirmation = async (toEmail, applicantName, jobTitle, companyName) => {
     const mailOptions = {
   from: `"HireHub" <${process.env.MAIL_USER}>`,
