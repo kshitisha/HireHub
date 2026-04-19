@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config(); 
+dotenv.config();
 
 import express from "express";
 import cookieParser from "cookie-parser";
@@ -20,11 +20,21 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'http://localhost:5175',
+    'https://hirehub-1.onrender.com',  // ← your frontend URL
+  ],
   credentials: true,
 }));
 
 const PORT = process.env.PORT || 3000;
+
+// Health check
+app.get("/", (req, res) => {
+  res.json({ message: "HireHub API is running ✅" });
+});
 
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/company", companyRoute);
