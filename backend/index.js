@@ -33,7 +33,7 @@ const PORT = process.env.PORT || 3000;
 
 // Health check
 app.get("/", (req, res) => {
-  res.json({ message: "HireHub API is running ✅" });
+  res.json({ message: "HireHub API is running " });
 });
 
 app.use("/api/v1/user", userRoute);
