@@ -1,37 +1,37 @@
-# HireHub — Smart Job Discovery Platform 🚀
+# HireHub — Smart Job Discovery Platform
 
 A full-stack **job portal** built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js). HireHub connects job seekers with opportunities through a clean, fast, and intuitive interface — and gives recruiters a complete dashboard to post jobs, manage companies, and review applicants.
 
 ---
 
-## ✨ Features
+## Features
 
 ### For Job Seekers
-- 🔐 JWT-based authentication (register, login, logout)
-- 🔍 Browse and search jobs with live filters (location, role, salary)
-- 📄 Apply to jobs with one click — duplicate prevention built in
-- 🔖 Save and unsave jobs — persists across sessions
-- 👤 Full profile management — bio, skills, resume (PDF), profile photo
-- 📋 Applied jobs tracker with status (Pending / Accepted / Rejected)
-- 💀 Skeleton loading states for smooth UX
+-  JWT-based authentication (register, login, logout)
+-  Browse and search jobs with live filters (location, role, salary)
+-  Apply to jobs with one click — duplicate prevention built in
+-  Save and unsave jobs — persists across sessions
+-  Full profile management — bio, skills, resume (PDF), profile photo
+-  Applied jobs tracker with status (Pending / Accepted / Rejected)
+-  Skeleton loading states for smooth UX
 
 ### For Recruiters
-- 🏢 Register and manage companies (with logo upload via Cloudinary)
-- 📝 Post, edit, and delete job listings
-- 👥 View all applicants per job with resume links
-- ✅ Accept or reject applicants directly from the dashboard
-- 🔐 Protected admin routes — recruiters only
+- Register and manage companies (with logo upload via Cloudinary)
+- Post, edit, and delete job listings
+- View all applicants per job with resume links
+- Accept or reject applicants directly from the dashboard
+- Protected admin routes — recruiters only
 
 ### Platform
-- 📱 Fully responsive — works on mobile and desktop
-- 🎨 Modern black & white design with Tailwind CSS
-- 🧠 Redux + Redux Persist for global state management
-- ☁️ Cloudinary for resume and image storage
-- 📧 Nodemailer confirmation email on job application
+- Fully responsive — works on mobile and desktop
+- Modern black & white design with Tailwind CSS
+- Redux + Redux Persist for global state management
+- Cloudinary for resume and image storage
+- Nodemailer confirmation email on job application
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -49,38 +49,32 @@ A full-stack **job portal** built with the **MERN stack** (MongoDB, Express.js, 
 ## Screenshots
 
 ### Home Page
-![Home Page](MERN-JobPortal-main\Screenshots\homepage.jpg)
+![Home Page](./Screenshots/homepage.jpg)
 
-### Featured Jobs
-![Featured Jobs](./Screenshots/FeaturedJobs.png)
+### Featured Opportunities
+![Featured Jobs](./Screenshots/featuredOpportunities.jpg)
 
 ### Login Page
-![Login Page](./Screenshots/LoginPage.png)
+![Login Page](./Screenshots/login.jpg)
 
 ### Signup Page
-![Signup Page](./Screenshots/SignupPage.png)
+![Signup Page](./Screenshots/signup.jpg)
 
-### Jobs Page (with filter sidebar)
-![Jobs Page](./Screenshots/JobsPage.png)
 
 ### Browse Page
-![Browse Page](./Screenshots/BrowseJobs.png)
+![Browse Page](./Screenshots/BrowseJobs.jpg)
 
-### Profile Page
-![Profile Page](./Screenshots/Profile.png)
+### Student Profile Page
+![Profile Page](./Screenshots/studentprofile.jpg)
 
-### 🏢 Admin — Companies
-![Admin Companies Page](./Screenshots/AdminCompanies.png)
+### Admin — Companies
+![Admin Companies Page](./Screenshots/AdminCompanies.jpg)
 
-### 📊 Admin — Jobs
-![Admin Jobs Page](./Screenshots/AdminJobs.png)
+### Admin — Jobs
+![Admin Jobs Page](./Screenshots/AdminJobs.jpg)
 
-### ✏️ Post a Job
-![Create Jobs Page](./Screenshots/CreateJobs.png)
 
----
-
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the repository
 ```bash
@@ -210,7 +204,7 @@ HireHub/
 
 ---
 
-## 🌍 Live Demo
+## Live Demo
 
 Coming soon — deploying on Render.
 
@@ -222,7 +216,7 @@ Pull requests are welcome. For major changes please open an issue first.
 
 ---
 
-## 📄 License
+## License
 
 MIT
 
