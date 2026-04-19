@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
-// 🔹 Components
+//  Components
 import Navbar from './components/shared/Navbar'
 import Login from './components/auth/Login'
 import Signup from './components/auth/Signup'
@@ -12,19 +12,19 @@ import JobDescription from './components/JobDescription'
 import Companies from './components/admin/Companies'
 import CompanyCreate from './components/admin/CompanyCreate'
 import CompanySetup from './components/admin/CompanySetup'
-import AdminJobs from "./components/admin/AdminJobs";
+import AdminJobs from "./components/admin/AdminJobs"
 import PostJob from './components/admin/PostJob'
 import Applicants from './components/admin/Applicants'
 import ProtectedRoute from './components/admin/ProtectedRoute'
 import CompanyProfile from './components/CompanyProfile'
-import SavedJobs from './components/savedjobs'
+import SavedJobs from './components/savedJobs'
 
-// 🔹 Redux
+// Redux
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from './redux/store'
 
-// 🔹 UI
+// UI
 import { Toaster } from 'sonner'
 
 
@@ -43,7 +43,7 @@ const Layout = () => {
 const appRouter = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,   // 🔥 THIS FIXES EVERYTHING
+    element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login /> },
@@ -55,7 +55,7 @@ const appRouter = createBrowserRouter([
       { path: '/company/:id', element: <CompanyProfile /> },
       { path: '/saved', element: <SavedJobs /> },
 
-      // 🔐 ADMIN
+      // ADMIN
       {
         path: "/admin/companies",
         element: <ProtectedRoute><Companies/></ProtectedRoute>
