@@ -1,5 +1,7 @@
-export const USER_API_END_POINT = "http://localhost:3000/api/v1/user"
-export const JOB_API_END_POINT = "http://localhost:3000/api/v1/job"
-export const APPLICATION_API_END_POINT = "http://localhost:3000/api/v1/application"
-export const COMPANY_API_END_POINT = "http://localhost:3000/api/v1/company"
-export const SAVED_API_END_POINT = "http://localhost:3000/api/v1/saved"
+const BASE = "https://hirehub-ila7.onrender.com/api/v1"
+
+export const USER_API_END_POINT = `${BASE}/user`
+export const JOB_API_END_POINT = `${BASE}/job`
+export const APPLICATION_API_END_POINT = `${BASE}/application`
+export const COMPANY_API_END_POINT = `${BASE}/company`
+export const SAVED_API_END_POINT = `${BASE}/saved`
