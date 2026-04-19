@@ -17,7 +17,7 @@ import PostJob from './components/admin/PostJob'
 import Applicants from './components/admin/Applicants'
 import ProtectedRoute from './components/admin/ProtectedRoute'
 import CompanyProfile from './components/CompanyProfile'
-import SavedJobs from './components/savedJobs'
+import SavedJobs from './components/SavedJobs'
 
 // Redux
 import { Provider } from 'react-redux'
