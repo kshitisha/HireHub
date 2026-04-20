@@ -24,7 +24,9 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:5174',
     'http://localhost:5175',
-    'https://hirehub-1.onrender.com',  // ← your frontend URL
+    'https://hirehub-1.onrender.com', 
+    'https://hirehub-1-uiyb.onrender.com', 
+    
   ],
   credentials: true,
 }));
